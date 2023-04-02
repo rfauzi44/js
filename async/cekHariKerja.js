@@ -35,6 +35,6 @@ async function init (hari) {
   
 }
 
-init("minggu")
+init("rabu")
 
 // async harus dibungkus dengan function

@@ -1,4 +1,4 @@
-const nama = [
+const theirName = [
   "Abigail",
   "Alexandra",
   "Alison",
@@ -21,12 +21,10 @@ function filterItems(arr, query) {
   return arr.filter((el) => el.toLowerCase().includes(query.toLowerCase()));
 }
 
-function searchName(data, queryNama, limit, callbackFn) {
-  let hasil = callbackFn(data, queryNama);
-  console.log(hasil.slice(0, limit));
+function searchName(data, queryname, limit, callbackFn) {
+  let result = callbackFn(data, queryname);
+  console.log(result.slice(0, limit));
 }
 
-
-
-//searchName(nama, "AN", 3, filterItems)
-searchName(nama, "L", 10, filterItems);
+//searchName(name, "AN", 3, filterItems)
+searchName(theirName, "ll", 10, filterItems);

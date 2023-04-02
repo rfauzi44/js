@@ -1,13 +1,11 @@
+// Algoritma
 // Mencari bagaimana cara print horizontal, karena default nya print vertical
-// Caranya kita harus membuat variabel dengan string kosong
-// Diprint sesuai baris yang kita inginkan
+// Yaitu kita harus membuat variabel dengan string kosong
+// Print sesuai baris yang kita inginkan
 // Setelah itu print secara decrement
 // Setelah itu buat new line setiap inner loop balik ke outer loop
-
-
 let ruang = ""
-let baris = 9
-
+let baris = 10
 
 if (typeof(baris) == "number" /*(&& typeof(baris) !== null*/) {
 
@@ -19,7 +17,7 @@ if (typeof(baris) == "number" /*(&& typeof(baris) !== null*/) {
       // loop 2 : ruang = 1 maka ruang (1 + 2) = 12 
       // loop 3 : ruang = 12 maka ruang (12 + 3) = 123 
     }
-    //sebenernya jadinya itu 12345.1234.123.12.1 maka kita newline
+    //sebenernya jadinya itu 12345.1234.123.12.1, maka kita newline
 
     ruang = ruang + "\n"
   }

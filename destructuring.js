@@ -1,4 +1,4 @@
-let data = {
+let firstData = {
   id: 1,
   name: "Leanne Graham",
   username: "Bret",
@@ -13,17 +13,18 @@ let data = {
   website: "hildegard.org",
 }
 
-let dataRizal = {
+let secondData = {
   name: "Rizal",
   email: "rizal@rizal.com",
   hobbies: ["nonton film", "maen futsal", "maen game"],
 }
 
-let bioDataJoin = {...data, ...dataRizal}
+//when join, last object will override previous object
+let bioDataJoin = {...firstData, ...secondData}
 console.log(bioDataJoin);
 
 let {street, city} = bioDataJoin.address
-console.log(`Alamat ${bioDataJoin.name} adalah di Jalan ${street} , Kota ${city}`);
+console.log(`Address of ${bioDataJoin.name} is in ${street} , City of ${city}`);
 
 
 

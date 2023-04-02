@@ -1,4 +1,6 @@
 let minData = 5;
+
+//Use case below
 //console.log(seleksiNilai(5, 20 , [2, 25, 4, 14, 17, 30, 8]))
 //console.log(seleksiNilai(15, 3 , [2, 25, 4, 14, 17, 30, 8]))
 //console.log(seleksiNilai(4, 17 , [2, 25, 4]))

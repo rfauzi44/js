@@ -5,19 +5,19 @@ let bioData = {
   isMarried: true,
   schoolList: [
     {
-      name: "Universitas Indonesia",
+      name: "Universitas Foobar",
       yearIn: 2012,
       yearOut: 2015,
       major: "Finance",
     },
     {
-      name: "Universitas Gadjah Mada",
+      name: "Universitas Foobar",
       yearIn: 2009,
       yearOut: 2012,
       major: "Finance",
     },
     {
-      name: "SMA N 11 Yogyakarta",
+      name: "SMA N Foobar",
       yearIn: 2006,
       yearOut: 2009,
       major: null,

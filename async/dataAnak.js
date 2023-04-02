@@ -35,7 +35,7 @@ const tambahUmur = () => {
 
 async function dataTambah(batas) {
   try {
-    let hasil = await getData(batas);
+    await getData(batas);
     tambahUmur();
   } catch (message) {
     console.log(message);
