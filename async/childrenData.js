@@ -1,4 +1,4 @@
-const dataAnak = [
+const children = [
   { nama: "rizal", umur: 30 },
   { nama: "aldi", umur: 25 },
   { nama: "fauzi", umur: 27 },
@@ -9,7 +9,7 @@ const dataAnak = [
 const getData = (umur) => {
   return new Promise((resolve, reject) => {
     setTimeout(() => {
-      hasil = dataAnak.filter((dataAnak) => dataAnak.umur > umur);
+      hasil = children.filter((children) => children.umur > umur);
       let error = false;
       if (!error) {
         resolve();
@@ -20,7 +20,7 @@ const getData = (umur) => {
   });
 };
 
-const tambahUmur = () => {
+const addAge = () => {
   for (let i = 0; i < hasil.length; i++) {
     hasil[i].umur = hasil[i].umur + 1;
   }
@@ -28,7 +28,7 @@ const tambahUmur = () => {
 };
 
 // getData(23)
-//   .then(tambahUmur)
+//   .then(addAge)
 //   .catch((message) => {
 //     console.log(message);
 //   });
@@ -36,7 +36,7 @@ const tambahUmur = () => {
 async function dataTambah(batas) {
   try {
     await getData(batas);
-    tambahUmur();
+    addAge();
   } catch (message) {
     console.log(message);
   }
